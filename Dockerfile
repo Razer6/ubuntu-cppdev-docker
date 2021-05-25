@@ -6,6 +6,10 @@ LABEL maintainer Robert Schilling <robert.schilling@iaik.tugraz.at>
 # update-alternatives is configured to simplify use of alternative tools. For
 # example, using gold as default linker
 #   `update-alternatives --set ld /usr/bin/ld.gold`.
+
+ENV TZ=Europe/Berlin
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
 #
 # When ccache should be used, the path has to be extended as follows:
 # `export PATH="/usr/lib/ccache:$PATH"`. Note that the default cache directory
