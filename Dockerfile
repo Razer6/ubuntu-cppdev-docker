@@ -1,6 +1,6 @@
-FROM ubuntu:16.04
+FROM ubuntu:20.04
 
-LABEL maintainer Mario Werner <mario.werner@iaik.tugraz.at>
+LABEL maintainer Mario Werner <robert.schilling@iaik.tugraz.at>
 
 # Install commonly used packages for c++ development. Additionally,
 # update-alternatives is configured to simplify use of alternative tools. For
