@@ -42,6 +42,7 @@ RUN apt-get update && apt-get install -y \
   valgrind \
   wget \
   gperf \
+  pkg-config \
   && pip3 install --upgrade conan conan_package_tools \
   && update-alternatives --install "/usr/bin/ld" "ld" "/usr/bin/ld.gold" 10 \
   && update-alternatives --install "/usr/bin/ld" "ld" "/usr/bin/ld.bfd" 20
